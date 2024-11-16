@@ -3,6 +3,7 @@ package com.tananushka.project;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
@@ -43,7 +44,8 @@ public class ObjectPoolLogger {
    private static final String ICON_SYS_INFO = "ℹ️";
    private static final String ICON_THREAD = "🧵";
 
-   private static final String LOG_FILE = "task-4-logs";
+   private static final String LOG_DIR = "task04";
+   private static final String LOG_FILE = Paths.get(LOG_DIR, "task-4-logs").toString();
 
    static {
       try (BufferedWriter writer = new BufferedWriter(new FileWriter(LOG_FILE + ".md", false))) {
