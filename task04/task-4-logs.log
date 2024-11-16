@@ -1,0 +1,611 @@
+[18:06:39.530] [main                ] ℹ️ Initial Parameters:
+[18:06:39.589] [main                ] ℹ️ - Pool Size: 5
+[18:06:39.591] [main                ] ℹ️ - Number of Producers: 3
+[18:06:39.594] [main                ] ℹ️ - Number of Consumers: 3
+[18:06:39.596] [main                ] ℹ️ - Test Duration: 5 seconds
+==================================================
+[18:06:39.606] [BlockingObjectPool  ] ℹ️ Pool initialized with size: 5
+[18:06:39.611] [Producer-1          ] 📊 Produced: Obj-6
+[18:06:39.610] [Producer-1          ] 🧵 Thread created
+[18:06:39.614] [Producer-1          ] 🔒 Attempting to acquire notFull condition
+[18:06:39.615] [Producer-2          ] 🧵 Thread created
+[18:06:39.618] [Producer-1          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:06:39.619] [Producer-3          ] 🧵 Thread created
+[18:06:39.627] [Consumer-1          ] 🧵 Thread created
+[18:06:39.630] [Consumer-2          ] 🧵 Thread created
+[18:06:39.632] [Consumer-3          ] 🧵 Thread created
+[18:06:39.635] [Main                ] ▶️ Started: Running test for 5 seconds
+[18:06:39.636] [Producer-2          ] 📊 Produced: Obj-7
+[18:06:39.639] [Consumer-1          ] 🔒 Attempting to acquire notEmpty condition
+[18:06:39.639] [Producer-3          ] 📊 Produced: Obj-8
+[18:06:39.642] [Consumer-1          ] 🔓 Released Object retrieved: Obj-1
+[18:06:39.644] [Consumer-1          ] 📊 Pool size after get: 4
+[18:06:39.646] [Consumer-2          ] 🔒 Attempting to acquire notEmpty condition
+[18:06:39.646] [Consumer-1          ] 📊 Consumed: Obj-1
+[18:06:39.647] [Consumer-2          ] 🔓 Released Object retrieved: Obj-2
+[18:06:39.649] [Consumer-2          ] 📊 Pool size after get: 3
+[18:06:39.651] [Consumer-2          ] 📊 Consumed: Obj-2
+[18:06:39.651] [Producer-2          ] 🔒 Attempting to acquire notFull condition
+[18:06:39.653] [Producer-2          ] 🔓 Released Object added: Obj-7
+[18:06:39.655] [Producer-2          ] 📊 Pool size after take: 4
+[18:06:39.656] [Producer-3          ] 🔒 Attempting to acquire notFull condition
+[18:06:39.657] [Producer-2          ] ✨ SUCCESS: Added: Obj-7
+[18:06:39.659] [Producer-3          ] 🔓 Released Object added: Obj-8
+[18:06:39.661] [Producer-3          ] 📊 Pool size after take: 5
+[18:06:39.663] [Producer-3          ] ✨ SUCCESS: Added: Obj-8
+[18:06:39.663] [Consumer-3          ] 🔒 Attempting to acquire notEmpty condition
+[18:06:39.665] [Consumer-3          ] 🔓 Released Object retrieved: Obj-3
+[18:06:39.666] [Consumer-3          ] 📊 Pool size after get: 4
+[18:06:39.669] [Consumer-3          ] 📊 Consumed: Obj-3
+[18:06:39.669] [Producer-1          ] 🔓 Released Object added: Obj-6
+[18:06:39.671] [Producer-1          ] 📊 Pool size after take: 5
+[18:06:39.672] [Producer-1          ] ✨ SUCCESS: Added: Obj-6
+[18:06:39.672] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:39.674] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-4, Obj-5, Obj-7, Obj-8, Obj-6]
+[18:06:39.677] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:39.679] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-4, Obj-5, Obj-7, Obj-8, Obj-6]
+[18:06:39.685] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:39.688] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-4, Obj-5, Obj-7, Obj-8, Obj-6]
+[18:06:39.689] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:39.695] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-4, Obj-5, Obj-7, Obj-8, Obj-6]
+[18:06:39.696] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:39.698] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-4, Obj-5, Obj-7, Obj-8, Obj-6]
+[18:06:39.699] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:39.701] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-4, Obj-5, Obj-7, Obj-8, Obj-6]
+[18:06:40.193] [Producer-2          ] 📊 Produced: Obj-9
+[18:06:40.195] [Producer-2          ] 🔒 Attempting to acquire notFull condition
+[18:06:40.197] [Producer-2          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:06:40.209] [Producer-1          ] 📊 Produced: Obj-10
+[18:06:40.211] [Producer-1          ] 🔒 Attempting to acquire notFull condition
+[18:06:40.213] [Producer-1          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:06:40.214] [Producer-3          ] 📊 Produced: Obj-11
+[18:06:40.215] [Producer-3          ] 🔒 Attempting to acquire notFull condition
+[18:06:40.221] [Producer-3          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:06:40.489] [Consumer-2          ] 🔒 Attempting to acquire notEmpty condition
+[18:06:40.491] [Consumer-2          ] 🔓 Released Object retrieved: Obj-4
+[18:06:40.495] [Consumer-2          ] 📊 Pool size after get: 4
+[18:06:40.496] [Consumer-2          ] 📊 Consumed: Obj-4
+[18:06:40.496] [Consumer-1          ] 🔒 Attempting to acquire notEmpty condition
+[18:06:40.498] [Consumer-1          ] 🔓 Released Object retrieved: Obj-5
+[18:06:40.499] [Consumer-1          ] 📊 Pool size after get: 3
+[18:06:40.500] [Consumer-1          ] 📊 Consumed: Obj-5
+[18:06:40.501] [BlockingObjectPool  ] ℹ️ Current pool size: 3
+[18:06:40.502] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-7, Obj-8, Obj-6]
+[18:06:40.504] [Producer-2          ] 🔓 Released Object added: Obj-9
+[18:06:40.506] [Producer-2          ] 📊 Pool size after take: 4
+[18:06:40.507] [BlockingObjectPool  ] ℹ️ Current pool size: 4
+[18:06:40.507] [Producer-2          ] ✨ SUCCESS: Added: Obj-9
+[18:06:40.508] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-7, Obj-8, Obj-6, Obj-9]
+[18:06:40.509] [Producer-1          ] 🔓 Released Object added: Obj-10
+[18:06:40.512] [Producer-1          ] 📊 Pool size after take: 5
+[18:06:40.513] [Producer-1          ] ✨ SUCCESS: Added: Obj-10
+[18:06:40.513] [Consumer-3          ] 🔒 Attempting to acquire notEmpty condition
+[18:06:40.514] [Consumer-3          ] 🔓 Released Object retrieved: Obj-7
+[18:06:40.515] [Consumer-3          ] 📊 Pool size after get: 4
+[18:06:40.517] [Consumer-3          ] 📊 Consumed: Obj-7
+[18:06:40.517] [BlockingObjectPool  ] ℹ️ Current pool size: 4
+[18:06:40.518] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-8, Obj-6, Obj-9, Obj-10]
+[18:06:40.522] [BlockingObjectPool  ] ℹ️ Current pool size: 4
+[18:06:40.525] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-8, Obj-6, Obj-9, Obj-10]
+[18:06:40.527] [Producer-3          ] 🔓 Released Object added: Obj-11
+[18:06:40.530] [Producer-3          ] 📊 Pool size after take: 5
+[18:06:40.531] [Producer-3          ] ✨ SUCCESS: Added: Obj-11
+[18:06:40.533] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:40.534] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-8, Obj-6, Obj-9, Obj-10, Obj-11]
+[18:06:40.535] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:40.537] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-8, Obj-6, Obj-9, Obj-10, Obj-11]
+[18:06:41.027] [Producer-2          ] 📊 Produced: Obj-12
+[18:06:41.037] [Producer-2          ] 🔒 Attempting to acquire notFull condition
+[18:06:41.039] [Producer-2          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:06:41.042] [Producer-1          ] 📊 Produced: Obj-14
+[18:06:41.042] [Producer-3          ] 📊 Produced: Obj-13
+[18:06:41.044] [Producer-1          ] 🔒 Attempting to acquire notFull condition
+[18:06:41.045] [Producer-1          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:06:41.046] [Producer-3          ] 🔒 Attempting to acquire notFull condition
+[18:06:41.051] [Producer-3          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:06:41.308] [Consumer-1          ] 🔒 Attempting to acquire notEmpty condition
+[18:06:41.309] [Consumer-1          ] 🔓 Released Object retrieved: Obj-8
+[18:06:41.310] [Consumer-1          ] 📊 Pool size after get: 4
+[18:06:41.312] [Consumer-1          ] 📊 Consumed: Obj-8
+[18:06:41.312] [Producer-2          ] 🔓 Released Object added: Obj-12
+[18:06:41.313] [Producer-2          ] 📊 Pool size after take: 5
+[18:06:41.314] [Producer-2          ] ✨ SUCCESS: Added: Obj-12
+[18:06:41.314] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:41.316] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-6, Obj-9, Obj-10, Obj-11, Obj-12]
+[18:06:41.317] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:41.318] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-6, Obj-9, Obj-10, Obj-11, Obj-12]
+[18:06:41.325] [Consumer-2          ] 🔒 Attempting to acquire notEmpty condition
+[18:06:41.327] [Consumer-2          ] 🔓 Released Object retrieved: Obj-6
+[18:06:41.329] [Consumer-2          ] 📊 Pool size after get: 4
+[18:06:41.331] [Consumer-2          ] 📊 Consumed: Obj-6
+[18:06:41.331] [Producer-1          ] 🔓 Released Object added: Obj-14
+[18:06:41.332] [Producer-1          ] 📊 Pool size after take: 5
+[18:06:41.333] [Producer-1          ] ✨ SUCCESS: Added: Obj-14
+[18:06:41.333] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:41.334] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-9, Obj-10, Obj-11, Obj-12, Obj-14]
+[18:06:41.335] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:41.336] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-9, Obj-10, Obj-11, Obj-12, Obj-14]
+[18:06:41.340] [Consumer-3          ] 🔒 Attempting to acquire notEmpty condition
+[18:06:41.359] [Consumer-3          ] 🔓 Released Object retrieved: Obj-9
+[18:06:41.361] [Consumer-3          ] 📊 Pool size after get: 4
+[18:06:41.362] [Consumer-3          ] 📊 Consumed: Obj-9
+[18:06:41.363] [Producer-3          ] 🔓 Released Object added: Obj-13
+[18:06:41.364] [Producer-3          ] 📊 Pool size after take: 5
+[18:06:41.364] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:41.364] [Producer-3          ] ✨ SUCCESS: Added: Obj-13
+[18:06:41.365] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-10, Obj-11, Obj-12, Obj-14, Obj-13]
+[18:06:41.366] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:41.367] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-10, Obj-11, Obj-12, Obj-14, Obj-13]
+[18:06:41.825] [Producer-2          ] 📊 Produced: Obj-15
+[18:06:41.828] [Producer-2          ] 🔒 Attempting to acquire notFull condition
+[18:06:41.830] [Producer-2          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:06:41.838] [Producer-1          ] 📊 Produced: Obj-16
+[18:06:41.839] [Producer-1          ] 🔒 Attempting to acquire notFull condition
+[18:06:41.842] [Producer-1          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:06:41.870] [Producer-3          ] 📊 Produced: Obj-17
+[18:06:41.875] [Producer-3          ] 🔒 Attempting to acquire notFull condition
+[18:06:41.877] [Producer-3          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:06:42.119] [Consumer-1          ] 🔒 Attempting to acquire notEmpty condition
+[18:06:42.122] [Consumer-1          ] 🔓 Released Object retrieved: Obj-10
+[18:06:42.126] [Consumer-1          ] 📊 Pool size after get: 4
+[18:06:42.131] [Consumer-1          ] 📊 Consumed: Obj-10
+[18:06:42.131] [Producer-2          ] 🔓 Released Object added: Obj-15
+[18:06:42.134] [Producer-2          ] 📊 Pool size after take: 5
+[18:06:42.135] [Producer-2          ] ✨ SUCCESS: Added: Obj-15
+[18:06:42.135] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:42.137] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-11, Obj-12, Obj-14, Obj-13, Obj-15]
+[18:06:42.138] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:42.142] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-11, Obj-12, Obj-14, Obj-13, Obj-15]
+[18:06:42.144] [Consumer-2          ] 🔒 Attempting to acquire notEmpty condition
+[18:06:42.146] [Consumer-2          ] 🔓 Released Object retrieved: Obj-11
+[18:06:42.150] [Consumer-2          ] 📊 Pool size after get: 4
+[18:06:42.152] [Producer-1          ] 🔓 Released Object added: Obj-16
+[18:06:42.152] [Consumer-2          ] 📊 Consumed: Obj-11
+[18:06:42.155] [Producer-1          ] 📊 Pool size after take: 5
+[18:06:42.164] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:42.165] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-12, Obj-14, Obj-13, Obj-15, Obj-16]
+[18:06:42.162] [Producer-1          ] ✨ SUCCESS: Added: Obj-16
+[18:06:42.167] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:42.168] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-12, Obj-14, Obj-13, Obj-15, Obj-16]
+[18:06:42.169] [Consumer-3          ] 🔒 Attempting to acquire notEmpty condition
+[18:06:42.170] [Consumer-3          ] 🔓 Released Object retrieved: Obj-12
+[18:06:42.171] [Consumer-3          ] 📊 Pool size after get: 4
+[18:06:42.178] [Consumer-3          ] 📊 Consumed: Obj-12
+[18:06:42.179] [Producer-3          ] 🔓 Released Object added: Obj-17
+[18:06:42.179] [Producer-3          ] 📊 Pool size after take: 5
+[18:06:42.181] [Producer-3          ] ✨ SUCCESS: Added: Obj-17
+[18:06:42.181] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:42.183] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-14, Obj-13, Obj-15, Obj-16, Obj-17]
+[18:06:42.184] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:42.185] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-14, Obj-13, Obj-15, Obj-16, Obj-17]
+[18:06:42.652] [Producer-2          ] 📊 Produced: Obj-18
+[18:06:42.653] [Producer-2          ] 🔒 Attempting to acquire notFull condition
+[18:06:42.656] [Producer-2          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:06:42.684] [Producer-1          ] 📊 Produced: Obj-19
+[18:06:42.686] [Producer-1          ] 🔒 Attempting to acquire notFull condition
+[18:06:42.687] [Producer-1          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:06:42.700] [Producer-3          ] 📊 Produced: Obj-20
+[18:06:42.769] [Producer-3          ] 🔒 Attempting to acquire notFull condition
+[18:06:42.813] [Producer-3          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:06:42.952] [Consumer-1          ] 🔒 Attempting to acquire notEmpty condition
+[18:06:42.955] [Consumer-1          ] 🔓 Released Object retrieved: Obj-14
+[18:06:42.956] [Consumer-1          ] 📊 Pool size after get: 4
+[18:06:42.957] [Consumer-1          ] 📊 Consumed: Obj-14
+[18:06:42.958] [BlockingObjectPool  ] ℹ️ Current pool size: 4
+[18:06:42.959] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-13, Obj-15, Obj-16, Obj-17]
+[18:06:42.965] [Producer-2          ] 🔓 Released Object added: Obj-18
+[18:06:42.968] [Producer-2          ] 📊 Pool size after take: 5
+[18:06:42.969] [Consumer-2          ] 🔒 Attempting to acquire notEmpty condition
+[18:06:42.969] [Producer-2          ] ✨ SUCCESS: Added: Obj-18
+[18:06:42.973] [Consumer-2          ] 🔓 Released Object retrieved: Obj-13
+[18:06:42.974] [Consumer-2          ] 📊 Pool size after get: 4
+[18:06:42.976] [Consumer-2          ] 📊 Consumed: Obj-13
+[18:06:42.976] [BlockingObjectPool  ] ℹ️ Current pool size: 4
+[18:06:42.977] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-15, Obj-16, Obj-17, Obj-18]
+[18:06:42.978] [Producer-1          ] 🔓 Released Object added: Obj-19
+[18:06:42.979] [Producer-1          ] 📊 Pool size after take: 5
+[18:06:42.980] [Producer-1          ] ✨ SUCCESS: Added: Obj-19
+[18:06:42.980] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:42.981] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-15, Obj-16, Obj-17, Obj-18, Obj-19]
+[18:06:42.982] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:42.983] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-15, Obj-16, Obj-17, Obj-18, Obj-19]
+[18:06:42.998] [Consumer-3          ] 🔒 Attempting to acquire notEmpty condition
+[18:06:43.000] [Consumer-3          ] 🔓 Released Object retrieved: Obj-15
+[18:06:43.001] [Consumer-3          ] 📊 Pool size after get: 4
+[18:06:43.026] [Consumer-3          ] 📊 Consumed: Obj-15
+[18:06:43.027] [Producer-3          ] 🔓 Released Object added: Obj-20
+[18:06:43.030] [Producer-3          ] 📊 Pool size after take: 5
+[18:06:43.031] [Producer-3          ] ✨ SUCCESS: Added: Obj-20
+[18:06:43.032] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:43.033] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-16, Obj-17, Obj-18, Obj-19, Obj-20]
+[18:06:43.034] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:43.035] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-16, Obj-17, Obj-18, Obj-19, Obj-20]
+[18:06:43.486] [Producer-1          ] 📊 Produced: Obj-22
+[18:06:43.486] [Producer-2          ] 📊 Produced: Obj-21
+[18:06:43.487] [Producer-1          ] 🔒 Attempting to acquire notFull condition
+[18:06:43.488] [Producer-1          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:06:43.489] [Producer-2          ] 🔒 Attempting to acquire notFull condition
+[18:06:43.489] [Producer-2          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:06:43.548] [Producer-3          ] 📊 Produced: Obj-23
+[18:06:43.550] [Producer-3          ] 🔒 Attempting to acquire notFull condition
+[18:06:43.551] [Producer-3          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:06:43.768] [Consumer-1          ] 🔒 Attempting to acquire notEmpty condition
+[18:06:43.769] [Consumer-1          ] 🔓 Released Object retrieved: Obj-16
+[18:06:43.772] [Consumer-1          ] 📊 Pool size after get: 4
+[18:06:43.773] [Consumer-1          ] 📊 Consumed: Obj-16
+[18:06:43.773] [Producer-1          ] 🔓 Released Object added: Obj-22
+[18:06:43.775] [Producer-1          ] 📊 Pool size after take: 5
+[18:06:43.775] [Producer-1          ] ✨ SUCCESS: Added: Obj-22
+[18:06:43.775] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:43.776] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-17, Obj-18, Obj-19, Obj-20, Obj-22]
+[18:06:43.777] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:43.778] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-17, Obj-18, Obj-19, Obj-20, Obj-22]
+[18:06:43.783] [Consumer-2          ] 🔒 Attempting to acquire notEmpty condition
+[18:06:43.785] [Consumer-2          ] 🔓 Released Object retrieved: Obj-17
+[18:06:43.787] [Consumer-2          ] 📊 Pool size after get: 4
+[18:06:43.788] [Consumer-2          ] 📊 Consumed: Obj-17
+[18:06:43.789] [BlockingObjectPool  ] ℹ️ Current pool size: 4
+[18:06:43.791] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-18, Obj-19, Obj-20, Obj-22]
+[18:06:43.795] [Producer-2          ] 🔓 Released Object added: Obj-21
+[18:06:43.796] [Producer-2          ] 📊 Pool size after take: 5
+[18:06:43.797] [Producer-2          ] ✨ SUCCESS: Added: Obj-21
+[18:06:43.798] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:43.799] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-18, Obj-19, Obj-20, Obj-22, Obj-21]
+[18:06:43.846] [Consumer-3          ] 🔒 Attempting to acquire notEmpty condition
+[18:06:43.847] [Consumer-3          ] 🔓 Released Object retrieved: Obj-18
+[18:06:43.849] [Consumer-3          ] 📊 Pool size after get: 4
+[18:06:43.850] [Producer-3          ] 🔓 Released Object added: Obj-23
+[18:06:43.852] [Producer-3          ] 📊 Pool size after take: 5
+[18:06:43.858] [Producer-3          ] ✨ SUCCESS: Added: Obj-23
+[18:06:43.859] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:43.860] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-19, Obj-20, Obj-22, Obj-21, Obj-23]
+[18:06:43.850] [Consumer-3          ] 📊 Consumed: Obj-18
+[18:06:43.868] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:43.872] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-19, Obj-20, Obj-22, Obj-21, Obj-23]
+[18:06:44.284] [Producer-1          ] 📊 Produced: Obj-24
+[18:06:44.286] [Producer-1          ] 🔒 Attempting to acquire notFull condition
+[18:06:44.287] [Producer-1          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:06:44.316] [Producer-2          ] 📊 Produced: Obj-25
+[18:06:44.317] [Producer-2          ] 🔒 Attempting to acquire notFull condition
+[18:06:44.319] [Producer-2          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:06:44.379] [Producer-3          ] 📊 Produced: Obj-26
+[18:06:44.382] [Producer-3          ] 🔒 Attempting to acquire notFull condition
+[18:06:44.383] [Producer-3          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:06:44.582] [Consumer-1          ] 🔒 Attempting to acquire notEmpty condition
+[18:06:44.583] [Consumer-1          ] 🔓 Released Object retrieved: Obj-19
+[18:06:44.584] [Consumer-1          ] 📊 Pool size after get: 4
+[18:06:44.585] [Consumer-1          ] 📊 Consumed: Obj-19
+[18:06:44.585] [Producer-1          ] 🔓 Released Object added: Obj-24
+[18:06:44.586] [Producer-1          ] 📊 Pool size after take: 5
+[18:06:44.587] [Producer-1          ] ✨ SUCCESS: Added: Obj-24
+[18:06:44.587] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:44.588] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-20, Obj-22, Obj-21, Obj-23, Obj-24]
+[18:06:44.589] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:44.590] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-20, Obj-22, Obj-21, Obj-23, Obj-24]
+[18:06:44.598] [Consumer-2          ] 🔒 Attempting to acquire notEmpty condition
+[18:06:44.599] [Consumer-2          ] 🔓 Released Object retrieved: Obj-20
+[18:06:44.601] [Consumer-2          ] 📊 Pool size after get: 4
+[18:06:44.602] [Consumer-2          ] 📊 Consumed: Obj-20
+[18:06:44.602] [Producer-2          ] 🔓 Released Object added: Obj-25
+[18:06:44.603] [Producer-2          ] 📊 Pool size after take: 5
+[18:06:44.604] [Producer-2          ] ✨ SUCCESS: Added: Obj-25
+[18:06:44.604] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:44.606] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-22, Obj-21, Obj-23, Obj-24, Obj-25]
+[18:06:44.606] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:44.607] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-22, Obj-21, Obj-23, Obj-24, Obj-25]
+[18:06:44.646] [Main                ] ▶️ Started: Stopping all threads
+[18:06:44.648] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:06:44.650] [Producer-2          ] ⚠️ WARNING: Producer interrupted
+[18:06:44.649] [Producer-1          ] ⚠️ WARNING: Producer interrupted
+[18:06:44.649] [Consumer-1          ] ⚠️ WARNING: Consumer interrupted
+[18:06:44.649] [Consumer-2          ] ⚠️ WARNING: Consumer interrupted
+[18:06:44.653] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-22, Obj-21, Obj-23, Obj-24, Obj-25]
+[18:06:44.651] [Consumer-3          ] ⚠️ WARNING: Consumer interrupted
+[18:06:44.655] [Main                ] ⏹️ Stopped: All threads stopped
+[18:06:44.655] [Producer-3          ] ⚠️ WARNING: Producer interrupted
+[18:08:02.800] [main                ] ℹ️ Initial Parameters:
+[18:08:02.862] [main                ] ℹ️ - Pool Size: 5
+[18:08:02.865] [main                ] ℹ️ - Number of Producers: 3
+[18:08:02.868] [main                ] ℹ️ - Number of Consumers: 3
+[18:08:02.875] [main                ] ℹ️ - Test Duration: 5 seconds
+==================================================
+[18:08:02.881] [BlockingObjectPool  ] ℹ️ Pool initialized with size: 5
+[18:08:02.884] [Producer-1          ] 🧵 Thread created
+[18:08:02.887] [Producer-1          ] 📊 Produced: Obj-6
+[18:08:02.888] [Producer-2          ] 🧵 Thread created
+[18:08:02.892] [Producer-3          ] 🧵 Thread created
+[18:08:02.891] [Producer-2          ] 📊 Produced: Obj-7
+[18:08:02.892] [Producer-1          ] 🔒 Attempting to acquire notFull condition
+[18:08:02.896] [Consumer-1          ] 🧵 Thread created
+[18:08:02.897] [Producer-1          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:08:02.900] [Consumer-2          ] 🧵 Thread created
+[18:08:02.900] [Producer-2          ] 🔒 Attempting to acquire notFull condition
+[18:08:02.899] [Producer-3          ] 📊 Produced: Obj-8
+[18:08:02.904] [Producer-2          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:08:02.904] [Consumer-3          ] 🧵 Thread created
+[18:08:02.906] [Consumer-1          ] 🔒 Attempting to acquire notEmpty condition
+[18:08:02.907] [Main                ] ▶️ Started: Running test for 5 seconds
+[18:08:02.908] [Consumer-1          ] 🔓 Released Object retrieved: Obj-1
+[18:08:02.910] [Consumer-1          ] 📊 Pool size after get: 4
+[18:08:02.912] [Consumer-2          ] 🔒 Attempting to acquire notEmpty condition
+[18:08:02.912] [Consumer-1          ] 📊 Consumed: Obj-1
+[18:08:02.915] [Consumer-2          ] 🔓 Released Object retrieved: Obj-2
+[18:08:02.918] [Consumer-2          ] 📊 Pool size after get: 3
+[18:08:02.921] [Consumer-2          ] 📊 Consumed: Obj-2
+[18:08:02.921] [Producer-3          ] 🔒 Attempting to acquire notFull condition
+[18:08:02.923] [Producer-3          ] 🔓 Released Object added: Obj-8
+[18:08:02.926] [Producer-3          ] 📊 Pool size after take: 4
+[18:08:02.928] [Producer-1          ] 🔓 Released Object added: Obj-6
+[18:08:02.928] [Producer-3          ] ✨ SUCCESS: Added: Obj-8
+[18:08:02.930] [Producer-1          ] 📊 Pool size after take: 5
+[18:08:02.931] [Producer-1          ] ✨ SUCCESS: Added: Obj-6
+[18:08:02.931] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:02.934] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-3, Obj-4, Obj-5, Obj-8, Obj-6]
+[18:08:02.940] [Consumer-3          ] 🔒 Attempting to acquire notEmpty condition
+[18:08:02.942] [Consumer-3          ] 🔓 Released Object retrieved: Obj-3
+[18:08:02.944] [Consumer-3          ] 📊 Pool size after get: 4
+[18:08:02.945] [Consumer-3          ] 📊 Consumed: Obj-3
+[18:08:02.945] [Producer-2          ] 🔓 Released Object added: Obj-7
+[18:08:02.952] [Producer-2          ] 📊 Pool size after take: 5
+[18:08:02.953] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:02.953] [Producer-2          ] ✨ SUCCESS: Added: Obj-7
+[18:08:02.955] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-4, Obj-5, Obj-8, Obj-6, Obj-7]
+[18:08:02.958] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:02.965] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-4, Obj-5, Obj-8, Obj-6, Obj-7]
+[18:08:02.969] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:02.970] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-4, Obj-5, Obj-8, Obj-6, Obj-7]
+[18:08:02.972] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:02.974] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-4, Obj-5, Obj-8, Obj-6, Obj-7]
+[18:08:02.991] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:02.992] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-4, Obj-5, Obj-8, Obj-6, Obj-7]
+[18:08:03.480] [Producer-3          ] 📊 Produced: Obj-9
+[18:08:03.480] [Producer-1          ] 📊 Produced: Obj-10
+[18:08:03.482] [Producer-3          ] 🔒 Attempting to acquire notFull condition
+[18:08:03.484] [Producer-3          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:08:03.484] [Producer-1          ] 🔒 Attempting to acquire notFull condition
+[18:08:03.486] [Producer-1          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:08:03.495] [Producer-2          ] 📊 Produced: Obj-11
+[18:08:03.497] [Producer-2          ] 🔒 Attempting to acquire notFull condition
+[18:08:03.499] [Producer-2          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:08:03.748] [Consumer-1          ] 🔒 Attempting to acquire notEmpty condition
+[18:08:03.750] [Consumer-1          ] 🔓 Released Object retrieved: Obj-4
+[18:08:03.752] [Consumer-1          ] 📊 Pool size after get: 4
+[18:08:03.755] [Consumer-1          ] 📊 Consumed: Obj-4
+[18:08:03.755] [Producer-3          ] 🔓 Released Object added: Obj-9
+[18:08:03.760] [Producer-3          ] 📊 Pool size after take: 5
+[18:08:03.761] [Producer-3          ] ✨ SUCCESS: Added: Obj-9
+[18:08:03.761] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:03.764] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-5, Obj-8, Obj-6, Obj-7, Obj-9]
+[18:08:03.766] [Consumer-2          ] 🔒 Attempting to acquire notEmpty condition
+[18:08:03.767] [Consumer-2          ] 🔓 Released Object retrieved: Obj-5
+[18:08:03.768] [Consumer-2          ] 📊 Pool size after get: 4
+[18:08:03.770] [Consumer-2          ] 📊 Consumed: Obj-5
+[18:08:03.771] [BlockingObjectPool  ] ℹ️ Current pool size: 4
+[18:08:03.776] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-8, Obj-6, Obj-7, Obj-9]
+[18:08:03.781] [BlockingObjectPool  ] ℹ️ Current pool size: 4
+[18:08:03.784] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-8, Obj-6, Obj-7, Obj-9]
+[18:08:03.785] [Producer-1          ] 🔓 Released Object added: Obj-10
+[18:08:03.786] [Producer-1          ] 📊 Pool size after take: 5
+[18:08:03.787] [Producer-1          ] ✨ SUCCESS: Added: Obj-10
+[18:08:03.789] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:03.790] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-8, Obj-6, Obj-7, Obj-9, Obj-10]
+[18:08:03.797] [Consumer-3          ] 🔒 Attempting to acquire notEmpty condition
+[18:08:03.803] [Consumer-3          ] 🔓 Released Object retrieved: Obj-8
+[18:08:03.809] [Consumer-3          ] 📊 Pool size after get: 4
+[18:08:03.811] [Consumer-3          ] 📊 Consumed: Obj-8
+[18:08:03.812] [Producer-2          ] 🔓 Released Object added: Obj-11
+[18:08:03.814] [Producer-2          ] 📊 Pool size after take: 5
+[18:08:03.816] [Producer-2          ] ✨ SUCCESS: Added: Obj-11
+[18:08:03.816] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:03.817] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-6, Obj-7, Obj-9, Obj-10, Obj-11]
+[18:08:03.819] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:03.820] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-6, Obj-7, Obj-9, Obj-10, Obj-11]
+[18:08:04.295] [Producer-1          ] 📊 Produced: Obj-12
+[18:08:04.297] [Producer-1          ] 🔒 Attempting to acquire notFull condition
+[18:08:04.298] [Producer-1          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:08:04.300] [Producer-3          ] 📊 Produced: Obj-13
+[18:08:04.301] [Producer-3          ] 🔒 Attempting to acquire notFull condition
+[18:08:04.303] [Producer-3          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:08:04.325] [Producer-2          ] 📊 Produced: Obj-14
+[18:08:04.326] [Producer-2          ] 🔒 Attempting to acquire notFull condition
+[18:08:04.327] [Producer-2          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:08:04.575] [Consumer-1          ] 🔒 Attempting to acquire notEmpty condition
+[18:08:04.578] [Consumer-1          ] 🔓 Released Object retrieved: Obj-6
+[18:08:04.580] [Consumer-1          ] 📊 Pool size after get: 4
+[18:08:04.582] [Producer-1          ] 🔓 Released Object added: Obj-12
+[18:08:04.583] [Producer-1          ] 📊 Pool size after take: 5
+[18:08:04.582] [Consumer-1          ] 📊 Consumed: Obj-6
+[18:08:04.584] [Producer-1          ] ✨ SUCCESS: Added: Obj-12
+[18:08:04.584] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:04.585] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-7, Obj-9, Obj-10, Obj-11, Obj-12]
+[18:08:04.587] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:04.588] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-7, Obj-9, Obj-10, Obj-11, Obj-12]
+[18:08:04.590] [Consumer-2          ] 🔒 Attempting to acquire notEmpty condition
+[18:08:04.591] [Consumer-2          ] 🔓 Released Object retrieved: Obj-7
+[18:08:04.593] [Consumer-2          ] 📊 Pool size after get: 4
+[18:08:04.596] [Consumer-2          ] 📊 Consumed: Obj-7
+[18:08:04.596] [Producer-3          ] 🔓 Released Object added: Obj-13
+[18:08:04.598] [Producer-3          ] 📊 Pool size after take: 5
+[18:08:04.600] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:04.601] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-9, Obj-10, Obj-11, Obj-12, Obj-13]
+[18:08:04.600] [Producer-3          ] ✨ SUCCESS: Added: Obj-13
+[18:08:04.606] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:04.610] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-9, Obj-10, Obj-11, Obj-12, Obj-13]
+[18:08:04.645] [Consumer-3          ] 🔒 Attempting to acquire notEmpty condition
+[18:08:04.647] [Consumer-3          ] 🔓 Released Object retrieved: Obj-9
+[18:08:04.649] [Consumer-3          ] 📊 Pool size after get: 4
+[18:08:04.651] [Consumer-3          ] 📊 Consumed: Obj-9
+[18:08:04.651] [Producer-2          ] 🔓 Released Object added: Obj-14
+[18:08:04.652] [Producer-2          ] 📊 Pool size after take: 5
+[18:08:04.654] [Producer-2          ] ✨ SUCCESS: Added: Obj-14
+[18:08:04.654] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:04.658] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-10, Obj-11, Obj-12, Obj-13, Obj-14]
+[18:08:04.660] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:04.661] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-10, Obj-11, Obj-12, Obj-13, Obj-14]
+[18:08:05.093] [Producer-1          ] 📊 Produced: Obj-15
+[18:08:05.095] [Producer-1          ] 🔒 Attempting to acquire notFull condition
+[18:08:05.096] [Producer-1          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:08:05.125] [Producer-3          ] 📊 Produced: Obj-16
+[18:08:05.126] [Producer-3          ] 🔒 Attempting to acquire notFull condition
+[18:08:05.128] [Producer-3          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:08:05.173] [Producer-2          ] 📊 Produced: Obj-17
+[18:08:05.174] [Producer-2          ] 🔒 Attempting to acquire notFull condition
+[18:08:05.175] [Producer-2          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:08:05.392] [Consumer-1          ] 🔒 Attempting to acquire notEmpty condition
+[18:08:05.393] [Consumer-1          ] 🔓 Released Object retrieved: Obj-10
+[18:08:05.394] [Consumer-1          ] 📊 Pool size after get: 4
+[18:08:05.395] [Producer-1          ] 🔓 Released Object added: Obj-15
+[18:08:05.395] [Consumer-1          ] 📊 Consumed: Obj-10
+[18:08:05.396] [Producer-1          ] 📊 Pool size after take: 5
+[18:08:05.397] [Producer-1          ] ✨ SUCCESS: Added: Obj-15
+[18:08:05.397] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:05.398] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-11, Obj-12, Obj-13, Obj-14, Obj-15]
+[18:08:05.399] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:05.400] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-11, Obj-12, Obj-13, Obj-14, Obj-15]
+[18:08:05.409] [Consumer-2          ] 🔒 Attempting to acquire notEmpty condition
+[18:08:05.410] [Consumer-2          ] 🔓 Released Object retrieved: Obj-11
+[18:08:05.411] [Consumer-2          ] 📊 Pool size after get: 4
+[18:08:05.412] [Consumer-2          ] 📊 Consumed: Obj-11
+[18:08:05.414] [BlockingObjectPool  ] ℹ️ Current pool size: 4
+[18:08:05.415] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-12, Obj-13, Obj-14, Obj-15]
+[18:08:05.417] [Producer-3          ] 🔓 Released Object added: Obj-16
+[18:08:05.419] [Producer-3          ] 📊 Pool size after take: 5
+[18:08:05.422] [Producer-3          ] ✨ SUCCESS: Added: Obj-16
+[18:08:05.422] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:05.425] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-12, Obj-13, Obj-14, Obj-15, Obj-16]
+[18:08:05.472] [Consumer-3          ] 🔒 Attempting to acquire notEmpty condition
+[18:08:05.474] [Consumer-3          ] 🔓 Released Object retrieved: Obj-12
+[18:08:05.480] [Consumer-3          ] 📊 Pool size after get: 4
+[18:08:05.481] [Producer-2          ] 🔓 Released Object added: Obj-17
+[18:08:05.481] [Consumer-3          ] 📊 Consumed: Obj-12
+[18:08:05.482] [Producer-2          ] 📊 Pool size after take: 5
+[18:08:05.483] [Producer-2          ] ✨ SUCCESS: Added: Obj-17
+[18:08:05.483] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:05.486] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-13, Obj-14, Obj-15, Obj-16, Obj-17]
+[18:08:05.488] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:05.489] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-13, Obj-14, Obj-15, Obj-16, Obj-17]
+[18:08:05.907] [Producer-1          ] 📊 Produced: Obj-18
+[18:08:05.909] [Producer-1          ] 🔒 Attempting to acquire notFull condition
+[18:08:05.910] [Producer-1          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:08:05.938] [Producer-3          ] 📊 Produced: Obj-19
+[18:08:05.940] [Producer-3          ] 🔒 Attempting to acquire notFull condition
+[18:08:05.941] [Producer-3          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:08:06.000] [Producer-2          ] 📊 Produced: Obj-20
+[18:08:06.002] [Producer-2          ] 🔒 Attempting to acquire notFull condition
+[18:08:06.003] [Producer-2          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:08:06.201] [Consumer-1          ] 🔒 Attempting to acquire notEmpty condition
+[18:08:06.203] [Consumer-1          ] 🔓 Released Object retrieved: Obj-13
+[18:08:06.206] [Consumer-1          ] 📊 Pool size after get: 4
+[18:08:06.207] [Producer-1          ] 🔓 Released Object added: Obj-18
+[18:08:06.207] [Consumer-1          ] 📊 Consumed: Obj-13
+[18:08:06.209] [Producer-1          ] 📊 Pool size after take: 5
+[18:08:06.210] [Producer-1          ] ✨ SUCCESS: Added: Obj-18
+[18:08:06.210] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:06.211] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-14, Obj-15, Obj-16, Obj-17, Obj-18]
+[18:08:06.211] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:06.213] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-14, Obj-15, Obj-16, Obj-17, Obj-18]
+[18:08:06.220] [Consumer-2          ] 🔒 Attempting to acquire notEmpty condition
+[18:08:06.223] [Consumer-2          ] 🔓 Released Object retrieved: Obj-14
+[18:08:06.225] [Consumer-2          ] 📊 Pool size after get: 4
+[18:08:06.226] [Consumer-2          ] 📊 Consumed: Obj-14
+[18:08:06.226] [Producer-3          ] 🔓 Released Object added: Obj-19
+[18:08:06.228] [Producer-3          ] 📊 Pool size after take: 5
+[18:08:06.228] [Producer-3          ] ✨ SUCCESS: Added: Obj-19
+[18:08:06.228] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:06.236] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-15, Obj-16, Obj-17, Obj-18, Obj-19]
+[18:08:06.237] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:06.239] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-15, Obj-16, Obj-17, Obj-18, Obj-19]
+[18:08:06.295] [Consumer-3          ] 🔒 Attempting to acquire notEmpty condition
+[18:08:06.296] [Consumer-3          ] 🔓 Released Object retrieved: Obj-15
+[18:08:06.298] [Consumer-3          ] 📊 Pool size after get: 4
+[18:08:06.299] [Consumer-3          ] 📊 Consumed: Obj-15
+[18:08:06.299] [Producer-2          ] 🔓 Released Object added: Obj-20
+[18:08:06.301] [Producer-2          ] 📊 Pool size after take: 5
+[18:08:06.301] [Producer-2          ] ✨ SUCCESS: Added: Obj-20
+[18:08:06.301] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:06.302] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-16, Obj-17, Obj-18, Obj-19, Obj-20]
+[18:08:06.304] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:06.305] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-16, Obj-17, Obj-18, Obj-19, Obj-20]
+[18:08:06.717] [Producer-1          ] 📊 Produced: Obj-21
+[18:08:06.720] [Producer-1          ] 🔒 Attempting to acquire notFull condition
+[18:08:06.722] [Producer-1          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:08:06.749] [Producer-3          ] 📊 Produced: Obj-22
+[18:08:06.755] [Producer-3          ] 🔒 Attempting to acquire notFull condition
+[18:08:06.757] [Producer-3          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:08:06.812] [Producer-2          ] 📊 Produced: Obj-23
+[18:08:06.813] [Producer-2          ] 🔒 Attempting to acquire notFull condition
+[18:08:06.815] [Producer-2          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:08:07.015] [Consumer-1          ] 🔒 Attempting to acquire notEmpty condition
+[18:08:07.017] [Consumer-1          ] 🔓 Released Object retrieved: Obj-16
+[18:08:07.019] [Consumer-1          ] 📊 Pool size after get: 4
+[18:08:07.020] [Producer-1          ] 🔓 Released Object added: Obj-21
+[18:08:07.020] [Consumer-1          ] 📊 Consumed: Obj-16
+[18:08:07.022] [Producer-1          ] 📊 Pool size after take: 5
+[18:08:07.022] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:07.023] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-17, Obj-18, Obj-19, Obj-20, Obj-21]
+[18:08:07.022] [Producer-1          ] ✨ SUCCESS: Added: Obj-21
+[18:08:07.026] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:07.027] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-17, Obj-18, Obj-19, Obj-20, Obj-21]
+[18:08:07.046] [Consumer-2          ] 🔒 Attempting to acquire notEmpty condition
+[18:08:07.048] [Consumer-2          ] 🔓 Released Object retrieved: Obj-17
+[18:08:07.051] [Consumer-2          ] 📊 Pool size after get: 4
+[18:08:07.052] [Consumer-2          ] 📊 Consumed: Obj-17
+[18:08:07.052] [Producer-3          ] 🔓 Released Object added: Obj-22
+[18:08:07.055] [Producer-3          ] 📊 Pool size after take: 5
+[18:08:07.058] [Producer-3          ] ✨ SUCCESS: Added: Obj-22
+[18:08:07.058] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:07.059] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-18, Obj-19, Obj-20, Obj-21, Obj-22]
+[18:08:07.063] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:07.065] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-18, Obj-19, Obj-20, Obj-21, Obj-22]
+[18:08:07.108] [Consumer-3          ] 🔒 Attempting to acquire notEmpty condition
+[18:08:07.115] [Consumer-3          ] 🔓 Released Object retrieved: Obj-18
+[18:08:07.121] [Consumer-3          ] 📊 Pool size after get: 4
+[18:08:07.129] [Consumer-3          ] 📊 Consumed: Obj-18
+[18:08:07.129] [Producer-2          ] 🔓 Released Object added: Obj-23
+[18:08:07.131] [Producer-2          ] 📊 Pool size after take: 5
+[18:08:07.134] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:07.134] [Producer-2          ] ✨ SUCCESS: Added: Obj-23
+[18:08:07.136] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-19, Obj-20, Obj-21, Obj-22, Obj-23]
+[18:08:07.138] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:07.139] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-19, Obj-20, Obj-21, Obj-22, Obj-23]
+[18:08:07.543] [Producer-1          ] 📊 Produced: Obj-24
+[18:08:07.545] [Producer-1          ] 🔒 Attempting to acquire notFull condition
+[18:08:07.546] [Producer-1          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:08:07.575] [Producer-3          ] 📊 Produced: Obj-25
+[18:08:07.576] [Producer-3          ] 🔒 Attempting to acquire notFull condition
+[18:08:07.577] [Producer-3          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:08:07.661] [Producer-2          ] 📊 Produced: Obj-26
+[18:08:07.662] [Producer-2          ] 🔒 Attempting to acquire notFull condition
+[18:08:07.663] [Producer-2          ] 🔒 Attempting to acquire Pool is full. Waiting...
+[18:08:07.840] [Consumer-1          ] 🔒 Attempting to acquire notEmpty condition
+[18:08:07.843] [Consumer-1          ] 🔓 Released Object retrieved: Obj-19
+[18:08:07.844] [Consumer-1          ] 📊 Pool size after get: 4
+[18:08:07.845] [Producer-1          ] 🔓 Released Object added: Obj-24
+[18:08:07.845] [Consumer-1          ] 📊 Consumed: Obj-19
+[18:08:07.846] [Producer-1          ] 📊 Pool size after take: 5
+[18:08:07.847] [Producer-1          ] ✨ SUCCESS: Added: Obj-24
+[18:08:07.847] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:07.848] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-20, Obj-21, Obj-22, Obj-23, Obj-24]
+[18:08:07.849] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:07.850] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-20, Obj-21, Obj-22, Obj-23, Obj-24]
+[18:08:07.872] [Consumer-2          ] 🔒 Attempting to acquire notEmpty condition
+[18:08:07.874] [Consumer-2          ] 🔓 Released Object retrieved: Obj-20
+[18:08:07.876] [Consumer-2          ] 📊 Pool size after get: 4
+[18:08:07.876] [Consumer-2          ] 📊 Consumed: Obj-20
+[18:08:07.877] [Producer-3          ] 🔓 Released Object added: Obj-25
+[18:08:07.880] [Producer-3          ] 📊 Pool size after take: 5
+[18:08:07.889] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:07.890] [Producer-3          ] ✨ SUCCESS: Added: Obj-25
+[18:08:07.891] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-21, Obj-22, Obj-23, Obj-24, Obj-25]
+[18:08:07.892] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:07.892] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-21, Obj-22, Obj-23, Obj-24, Obj-25]
+[18:08:07.917] [Main                ] ▶️ Started: Stopping all threads
+[18:08:07.919] [Producer-1          ] ⚠️ WARNING: Producer interrupted
+[18:08:07.919] [Producer-2          ] ⚠️ WARNING: Producer interrupted
+[18:08:07.921] [Consumer-1          ] ⚠️ WARNING: Consumer interrupted
+[18:08:07.921] [Producer-3          ] ⚠️ WARNING: Producer interrupted
+[18:08:07.921] [Consumer-2          ] ⚠️ WARNING: Consumer interrupted
+[18:08:07.921] [Consumer-3          ] ⚠️ WARNING: Consumer interrupted
+[18:08:07.921] [BlockingObjectPool  ] ℹ️ Current pool size: 5
+[18:08:07.924] [BlockingObjectPool  ] ℹ️ Current pool contents: [Obj-21, Obj-22, Obj-23, Obj-24, Obj-25]
+[18:08:07.925] [Main                ] ⏹️ Stopped: All threads stopped
