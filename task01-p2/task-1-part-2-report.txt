@@ -1,0 +1,70 @@
+Module 01 Task 01 Part 2 Report 
+========================================== 
+========================================== 
+Testing with C:\java\jdk-6 
+Date: 15.11.2024 Time: 19:48:43,49 
+Compiling with C:\java\jdk-6... 
+------------------------------------------ 
+Running MapConcurrencyTest with C:\java\jdk-6 
+Testing CustomMap (unsafe):
+Map implementation: CustomMap
+Total successful iterations: 44362
+Total exceptions caught: 6115
+Final map size: 10000
+
+Testing ThreadSafeMap:
+Map implementation: ThreadSafeMap
+Total successful iterations: 154941
+Total exceptions caught: 0
+Final map size: 1046
+========================================== 
+Testing with C:\java\jdk-8 
+Date: 15.11.2024 Time: 19:48:43,49 
+Compiling with C:\java\jdk-8... 
+------------------------------------------ 
+Running MapConcurrencyTest with C:\java\jdk-8 
+Testing CustomMap (unsafe):
+Map implementation: CustomMap
+Total successful iterations: 42550
+Total exceptions caught: 2579
+Final map size: 10000
+
+Testing ThreadSafeMap:
+Map implementation: ThreadSafeMap
+Total successful iterations: 121810
+Total exceptions caught: 0
+Final map size: 1302
+========================================== 
+Testing with C:\java\jdk-10 
+Date: 15.11.2024 Time: 19:48:43,49 
+Compiling with C:\java\jdk-10... 
+------------------------------------------ 
+Running MapConcurrencyTest with C:\java\jdk-10 
+Testing CustomMap (unsafe):
+Map implementation: CustomMap
+Total successful iterations: 29444
+Total exceptions caught: 2163
+Final map size: 10000
+
+Testing ThreadSafeMap:
+Map implementation: ThreadSafeMap
+Total successful iterations: 132918
+Total exceptions caught: 0
+Final map size: 1003
+========================================== 
+Testing with C:\java\jdk-11 
+Date: 15.11.2024 Time: 19:48:43,49 
+Compiling with C:\java\jdk-11... 
+------------------------------------------ 
+Running MapConcurrencyTest with C:\java\jdk-11 
+Testing CustomMap (unsafe):
+Map implementation: CustomMap
+Total successful iterations: 27125
+Total exceptions caught: 2790
+Final map size: 10000
+
+Testing ThreadSafeMap:
+Map implementation: ThreadSafeMap
+Total successful iterations: 196376
+Total exceptions caught: 0
+Final map size: 722
