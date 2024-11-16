@@ -1,0 +1,327 @@
+[14:34:18.648] [Main           ] ℹ️ Java version: 17.0.12
+[14:34:18.683] [Main           ] ℹ️ Available processors: 8
+[14:34:18.691] [Main           ] ℹ️ Max memory: 8068MB
+[14:34:18.694] [Main           ] ▶️ Started: UNSAFE demonstration (prone to deadlock)
+[14:34:18.699] [Main           ] 💡 Unsafe threads started, waiting for potential deadlock...
+[14:34:18.704] [UnsafeSqrtCalc ] 🧵 Thread created
+[14:34:18.707] [UnsafeWriter   ] 🧵 Thread created
+[14:34:18.708] [UnsafeSumCalc  ] 🧵 Thread created
+[14:34:18.709] [UnsafeWriter   ] ▶️ Started: unsafe writer
+[14:34:18.714] [UnsafeSqrtCalc ] ▶️ Started: unsafe sqrt calculator
+[14:34:18.714] [UnsafeSumCalc  ] ▶️ Started: unsafe sum calculator
+[14:34:18.719] [UnsafeSqrtCalc ] 🔄 State changed to: RUNNING
+[14:34:18.718] [UnsafeSumCalc  ] 🔄 State changed to: RUNNING
+[14:34:18.719] [UnsafeWriter   ] 🔄 State changed to: RUNNING
+[14:34:18.723] [UnsafeSqrtCalc ] 🔒 Attempting to acquire READ_LOCK
+[14:34:18.723] [UnsafeSumCalc  ] 🔒 Attempting to acquire READ_LOCK
+[14:34:18.728] [UnsafeSqrtCalc ] ✅ Acquired READ_LOCK
+[14:34:18.731] [UnsafeSqrtCalc ] 🔒 Attempting to acquire WRITE_LOCK
+[14:34:18.730] [UnsafeWriter   ] 🔒 Attempting to acquire WRITE_LOCK
+[14:34:18.734] [UnsafeSqrtCalc ] ⚠️ WARNING: Empty collection
+[14:34:18.736] [UnsafeSqrtCalc ] 🔓 Released WRITE_LOCK
+[14:34:18.737] [UnsafeSqrtCalc ] 🔓 Released READ_LOCK
+[14:34:18.736] [UnsafeWriter   ] ✅ Acquired WRITE_LOCK
+[14:34:18.739] [UnsafeSumCalc  ] ✅ Acquired READ_LOCK
+[14:34:18.740] [UnsafeWriter   ] 🔒 Attempting to acquire READ_LOCK
+[14:34:18.741] [UnsafeSumCalc  ] 🔒 Attempting to acquire WRITE_LOCK
+[14:34:19.047] [UnsafeSqrtCalc ] 🔒 Attempting to acquire READ_LOCK
+[14:34:23.717] [Main           ] ⚠️ WARNING: Attempting to stop unsafe threads (might be deadlocked)
+[14:34:26.720] [Main           ] 💀 DEADLOCK DETECTED!
+[14:34:26.721] [Main           ] ⚠️ WARNING: Threads failed to finish properly - likely deadlocked
+[14:34:26.723] [Main           ] 🔄 State changed to: Writer thread state: BLOCKED
+[14:34:26.725] [Main           ] 🔄 State changed to: Sum thread state: BLOCKED
+[14:34:26.727] [Main           ] 🔄 State changed to: Sqrt thread state: BLOCKED
+[14:34:26.738] [Main           ] ℹ️ Unsafe demo ran for 8,03 seconds
+==================================================
+[14:34:26.742] [Main           ] 💡 Waiting before starting safe version...
+[14:34:27.748] [Main           ] ▶️ Started: SAFE demonstration
+[14:34:27.749] [Main           ] ℹ️ Starting safe version demonstration
+[14:34:27.753] [Main           ] 💡 Starting safe threads
+[14:34:27.755] [SafeWriter     ] 🧵 Thread created
+[14:34:27.755] [Main           ] 💡 Safe threads started, will run without deadlock
+[14:34:27.757] [SafeWriter     ] ▶️ Started: safe writer
+[14:34:27.755] [SafeSumCalc    ] 🧵 Thread created
+[14:34:27.758] [SafeWriter     ] 🔄 State changed to: RUNNING
+[14:34:27.757] [SafeSqrtCalc   ] 🧵 Thread created
+[14:34:27.762] [SafeWriter     ] ℹ️ Using synchronized list of size: 0
+[14:34:27.762] [SafeSumCalc    ] ▶️ Started: safe sum calculator
+[14:34:27.762] [SafeSqrtCalc   ] ▶️ Started: safe sqrt calculator
+[14:34:27.763] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:27.765] [SafeSqrtCalc   ] 🔄 State changed to: RUNNING
+[14:34:27.765] [SafeSumCalc    ] 🔄 State changed to: RUNNING
+[14:34:27.765] [SafeWriter     ] 📊 Added: 41, Operations: 1, Size: 1
+[14:34:27.766] [SafeSqrtCalc   ] 🔒 Attempting to acquire numbers
+[14:34:27.766] [SafeWriter     ] 🔓 Released numbers
+[14:34:27.766] [SafeSumCalc    ] 🔒 Attempting to acquire numbers
+[14:34:27.773] [SafeSqrtCalc   ] 📊 Sqrt: 41,00, Operations: 1
+[14:34:27.774] [SafeSqrtCalc   ] 🔓 Released numbers
+[14:34:27.776] [SafeSumCalc    ] 📊 Sum: 41, Operations: 1
+[14:34:27.777] [SafeSumCalc    ] 🔓 Released numbers
+[14:34:27.871] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:27.873] [SafeWriter     ] 📊 Added: 18, Operations: 2, Size: 2
+[14:34:27.874] [SafeWriter     ] 🔓 Released numbers
+[14:34:27.975] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:27.977] [SafeWriter     ] 📊 Added: 6, Operations: 3, Size: 3
+[14:34:27.978] [SafeWriter     ] 🔓 Released numbers
+[14:34:27.980] [SafeSumCalc    ] 🔒 Attempting to acquire numbers
+[14:34:27.986] [SafeSumCalc    ] 📊 Sum: 65, Operations: 2
+[14:34:27.987] [SafeSumCalc    ] 🔓 Released numbers
+[14:34:28.076] [SafeSqrtCalc   ] 🔒 Attempting to acquire numbers
+[14:34:28.077] [SafeSqrtCalc   ] 📊 Sqrt: 45,18, Operations: 2
+[14:34:28.079] [SafeSqrtCalc   ] 🔓 Released numbers
+[14:34:28.081] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:28.082] [SafeWriter     ] 📊 Added: 88, Operations: 4, Size: 4
+[14:34:28.083] [SafeWriter     ] 🔓 Released numbers
+[14:34:28.186] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:28.188] [SafeWriter     ] 📊 Added: 18, Operations: 5, Size: 5
+[14:34:28.189] [SafeWriter     ] 🔓 Released numbers
+[14:34:28.191] [SafeSumCalc    ] 🔒 Attempting to acquire numbers
+[14:34:28.198] [SafeSumCalc    ] 📊 Sum: 171, Operations: 3
+[14:34:28.200] [SafeSumCalc    ] 🔓 Released numbers
+[14:34:28.292] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:28.294] [SafeWriter     ] 📊 Added: 66, Operations: 6, Size: 6
+[14:34:28.296] [SafeWriter     ] 🔓 Released numbers
+[14:34:28.382] [SafeSqrtCalc   ] 🔒 Attempting to acquire numbers
+[14:34:28.384] [SafeSqrtCalc   ] 📊 Sqrt: 120,27, Operations: 3
+[14:34:28.386] [SafeSqrtCalc   ] 🔓 Released numbers
+[14:34:28.399] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:28.402] [SafeSumCalc    ] 🔒 Attempting to acquire numbers
+[14:34:28.404] [SafeWriter     ] 📊 Added: 13, Operations: 7, Size: 7
+[14:34:28.407] [SafeWriter     ] 🔓 Released numbers
+[14:34:28.407] [SafeSumCalc    ] 📊 Sum: 250, Operations: 4
+[14:34:28.409] [SafeSumCalc    ] 🔓 Released numbers
+[14:34:28.509] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:28.511] [SafeWriter     ] 📊 Added: 38, Operations: 8, Size: 8
+[14:34:28.516] [SafeWriter     ] 🔓 Released numbers
+[14:34:28.611] [SafeSumCalc    ] 🔒 Attempting to acquire numbers
+[14:34:28.618] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:28.620] [SafeWriter     ] 📊 Added: 11, Operations: 9, Size: 9
+[14:34:28.621] [SafeWriter     ] 🔓 Released numbers
+[14:34:28.626] [SafeSumCalc    ] 📊 Sum: 299, Operations: 5
+[14:34:28.634] [SafeSumCalc    ] 🔓 Released numbers
+[14:34:28.689] [SafeSqrtCalc   ] 🔒 Attempting to acquire numbers
+[14:34:28.692] [SafeSqrtCalc   ] 📊 Sqrt: 127,28, Operations: 4
+[14:34:28.695] [SafeSqrtCalc   ] 🔓 Released numbers
+[14:34:28.724] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:28.726] [SafeWriter     ] 📊 Added: 26, Operations: 10, Size: 10
+[14:34:28.727] [SafeWriter     ] ✨ SUCCESS: Completed 10 write operations
+[14:34:28.729] [SafeWriter     ] 📈 List size usage: 10 elements
+[14:34:28.729] [SafeWriter     ] 🔓 Released numbers
+[14:34:28.834] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:28.843] [SafeWriter     ] 📊 Added: 55, Operations: 11, Size: 11
+[14:34:28.845] [SafeWriter     ] 🔓 Released numbers
+[14:34:28.852] [SafeSumCalc    ] 🔒 Attempting to acquire numbers
+[14:34:28.854] [SafeSumCalc    ] 📊 Sum: 380, Operations: 6
+[14:34:28.856] [SafeSumCalc    ] 🔓 Released numbers
+[14:34:28.960] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:28.961] [SafeWriter     ] 📊 Added: 93, Operations: 12, Size: 12
+[14:34:28.964] [SafeWriter     ] 🔓 Released numbers
+[14:34:29.006] [SafeSqrtCalc   ] 🔒 Attempting to acquire numbers
+[14:34:29.009] [SafeSqrtCalc   ] 📊 Sqrt: 168,96, Operations: 5
+[14:34:29.012] [SafeSqrtCalc   ] 🔓 Released numbers
+[14:34:29.070] [SafeSumCalc    ] 🔒 Attempting to acquire numbers
+[14:34:29.072] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:29.075] [SafeSumCalc    ] 📊 Sum: 473, Operations: 7
+[14:34:29.077] [SafeWriter     ] 📊 Added: 1, Operations: 13, Size: 13
+[14:34:29.078] [SafeWriter     ] 🔓 Released numbers
+[14:34:29.080] [SafeSumCalc    ] 🔓 Released numbers
+[14:34:29.199] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:29.211] [SafeWriter     ] 📊 Added: 44, Operations: 14, Size: 14
+[14:34:29.212] [SafeWriter     ] 🔓 Released numbers
+[14:34:29.293] [SafeSumCalc    ] 🔒 Attempting to acquire numbers
+[14:34:29.294] [SafeSumCalc    ] 📊 Sum: 518, Operations: 8
+[14:34:29.300] [SafeSumCalc    ] 🔓 Released numbers
+[14:34:29.325] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:29.325] [SafeSqrtCalc   ] 🔒 Attempting to acquire numbers
+[14:34:29.327] [SafeWriter     ] 📊 Added: 1, Operations: 15, Size: 15
+[14:34:29.329] [SafeWriter     ] 🔓 Released numbers
+[14:34:29.333] [SafeSqrtCalc   ] 📊 Sqrt: 174,61, Operations: 6
+[14:34:29.335] [SafeSqrtCalc   ] 🔓 Released numbers
+[14:34:29.435] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:29.436] [SafeWriter     ] 📊 Added: 28, Operations: 16, Size: 16
+[14:34:29.437] [SafeWriter     ] 🔓 Released numbers
+[14:34:29.514] [SafeSumCalc    ] 🔒 Attempting to acquire numbers
+[14:34:29.517] [SafeSumCalc    ] 📊 Sum: 547, Operations: 9
+[14:34:29.519] [SafeSumCalc    ] 🔓 Released numbers
+[14:34:29.546] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:29.548] [SafeWriter     ] 📊 Added: 69, Operations: 17, Size: 17
+[14:34:29.550] [SafeWriter     ] 🔓 Released numbers
+[14:34:29.641] [SafeSqrtCalc   ] 🔒 Attempting to acquire numbers
+[14:34:29.645] [SafeSqrtCalc   ] 📊 Sqrt: 189,82, Operations: 7
+[14:34:29.647] [SafeSqrtCalc   ] 🔓 Released numbers
+[14:34:29.657] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:29.659] [SafeWriter     ] 📊 Added: 49, Operations: 18, Size: 18
+[14:34:29.663] [SafeWriter     ] 🔓 Released numbers
+[14:34:29.720] [SafeSumCalc    ] 🔒 Attempting to acquire numbers
+[14:34:29.736] [SafeSumCalc    ] 📊 Sum: 665, Operations: 10
+[14:34:29.741] [SafeSumCalc    ] ✨ SUCCESS: Completed 10 sum calculations
+[14:34:29.748] [SafeSumCalc    ] 🔓 Released numbers
+[14:34:29.768] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:29.769] [SafeWriter     ] 📊 Added: 37, Operations: 19, Size: 19
+[14:34:29.771] [SafeWriter     ] 🔓 Released numbers
+[14:34:29.879] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:29.881] [SafeWriter     ] 📊 Added: 65, Operations: 20, Size: 20
+[14:34:29.882] [SafeWriter     ] ✨ SUCCESS: Completed 20 write operations
+[14:34:29.883] [SafeWriter     ] 📈 List size usage: 20 elements
+[14:34:29.884] [SafeWriter     ] 🔓 Released numbers
+[14:34:29.959] [SafeSumCalc    ] 🔒 Attempting to acquire numbers
+[14:34:29.962] [SafeSumCalc    ] 📊 Sum: 767, Operations: 11
+[14:34:29.960] [SafeSqrtCalc   ] 🔒 Attempting to acquire numbers
+[14:34:29.965] [SafeSqrtCalc   ] 📊 Sqrt: 209,83, Operations: 8
+[14:34:29.963] [SafeSumCalc    ] 🔓 Released numbers
+[14:34:29.967] [SafeSqrtCalc   ] 🔓 Released numbers
+[14:34:29.991] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:30.001] [SafeWriter     ] 📊 Added: 57, Operations: 21, Size: 21
+[14:34:30.003] [SafeWriter     ] 🔓 Released numbers
+[14:34:30.115] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:30.117] [SafeWriter     ] 📊 Added: 52, Operations: 22, Size: 22
+[14:34:30.118] [SafeWriter     ] 🔓 Released numbers
+[14:34:30.181] [SafeSumCalc    ] 🔒 Attempting to acquire numbers
+[14:34:30.190] [SafeSumCalc    ] 📊 Sum: 876, Operations: 12
+[14:34:30.197] [SafeSumCalc    ] 🔓 Released numbers
+[14:34:30.225] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:30.227] [SafeWriter     ] 📊 Added: 90, Operations: 23, Size: 23
+[14:34:30.228] [SafeWriter     ] 🔓 Released numbers
+[14:34:30.273] [SafeSqrtCalc   ] 🔒 Attempting to acquire numbers
+[14:34:30.275] [SafeSqrtCalc   ] 📊 Sqrt: 241,00, Operations: 9
+[14:34:30.277] [SafeSqrtCalc   ] 🔓 Released numbers
+[14:34:30.337] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:30.339] [SafeWriter     ] 📊 Added: 74, Operations: 24, Size: 24
+[14:34:30.340] [SafeWriter     ] 🔓 Released numbers
+[14:34:30.402] [SafeSumCalc    ] 🔒 Attempting to acquire numbers
+[14:34:30.404] [SafeSumCalc    ] 📊 Sum: 1040, Operations: 13
+[14:34:30.412] [SafeSumCalc    ] 🔓 Released numbers
+[14:34:30.448] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:30.451] [SafeWriter     ] 📊 Added: 82, Operations: 25, Size: 25
+[14:34:30.454] [SafeWriter     ] 🔓 Released numbers
+[14:34:30.558] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:30.561] [SafeWriter     ] 📊 Added: 47, Operations: 26, Size: 26
+[14:34:30.564] [SafeWriter     ] 🔓 Released numbers
+[14:34:30.590] [SafeSqrtCalc   ] 🔒 Attempting to acquire numbers
+[14:34:30.593] [SafeSqrtCalc   ] 📊 Sqrt: 269,24, Operations: 10
+[14:34:30.595] [SafeSqrtCalc   ] ✨ SUCCESS: Completed 10 sqrt calculations
+[14:34:30.597] [SafeSqrtCalc   ] 🔓 Released numbers
+[14:34:30.622] [SafeSumCalc    ] 🔒 Attempting to acquire numbers
+[14:34:30.624] [SafeSumCalc    ] 📊 Sum: 1169, Operations: 14
+[14:34:30.634] [SafeSumCalc    ] 🔓 Released numbers
+[14:34:30.669] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:30.671] [SafeWriter     ] 📊 Added: 99, Operations: 27, Size: 27
+[14:34:30.673] [SafeWriter     ] 🔓 Released numbers
+[14:34:30.779] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:30.781] [SafeWriter     ] 📊 Added: 56, Operations: 28, Size: 28
+[14:34:30.782] [SafeWriter     ] 🔓 Released numbers
+[14:34:30.857] [SafeSumCalc    ] 🔒 Attempting to acquire numbers
+[14:34:30.861] [SafeSumCalc    ] 📊 Sum: 1324, Operations: 15
+[14:34:30.866] [SafeSumCalc    ] 🔓 Released numbers
+[14:34:30.897] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:30.900] [SafeWriter     ] 📊 Added: 96, Operations: 29, Size: 29
+[14:34:30.901] [SafeWriter     ] 🔓 Released numbers
+[14:34:30.905] [SafeSqrtCalc   ] 🔒 Attempting to acquire numbers
+[14:34:30.910] [SafeSqrtCalc   ] 📊 Sqrt: 307,64, Operations: 11
+[14:34:30.914] [SafeSqrtCalc   ] 🔓 Released numbers
+[14:34:31.015] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:31.016] [SafeWriter     ] 📊 Added: 62, Operations: 30, Size: 30
+[14:34:31.017] [SafeWriter     ] ✨ SUCCESS: Completed 30 write operations
+[14:34:31.018] [SafeWriter     ] 📈 List size usage: 30 elements
+[14:34:31.019] [SafeWriter     ] 🔓 Released numbers
+[14:34:31.108] [SafeSumCalc    ] 🔒 Attempting to acquire numbers
+[14:34:31.148] [SafeSumCalc    ] 📊 Sum: 1482, Operations: 16
+[14:34:31.128] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:31.151] [SafeWriter     ] 📊 Added: 34, Operations: 31, Size: 31
+[14:34:31.150] [SafeSumCalc    ] 🔓 Released numbers
+[14:34:31.152] [SafeWriter     ] 🔓 Released numbers
+[14:34:31.219] [SafeSqrtCalc   ] 🔒 Attempting to acquire numbers
+[14:34:31.221] [SafeSqrtCalc   ] 📊 Sqrt: 315,66, Operations: 12
+[14:34:31.221] [SafeSqrtCalc   ] 🔓 Released numbers
+[14:34:31.266] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:31.268] [SafeWriter     ] 📊 Added: 49, Operations: 32, Size: 32
+[14:34:31.269] [SafeWriter     ] 🔓 Released numbers
+[14:34:31.360] [SafeSumCalc    ] 🔒 Attempting to acquire numbers
+[14:34:31.368] [SafeSumCalc    ] 📊 Sum: 1565, Operations: 17
+[14:34:31.373] [SafeSumCalc    ] 🔓 Released numbers
+[14:34:31.376] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:31.379] [SafeWriter     ] 📊 Added: 40, Operations: 33, Size: 33
+[14:34:31.382] [SafeWriter     ] 🔓 Released numbers
+[14:34:31.487] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:31.488] [SafeWriter     ] 📊 Added: 98, Operations: 34, Size: 34
+[14:34:31.489] [SafeWriter     ] 🔓 Released numbers
+[14:34:31.534] [SafeSqrtCalc   ] 🔒 Attempting to acquire numbers
+[14:34:31.536] [SafeSqrtCalc   ] 📊 Sqrt: 336,52, Operations: 13
+[14:34:31.537] [SafeSqrtCalc   ] 🔓 Released numbers
+[14:34:31.582] [SafeSumCalc    ] 🔒 Attempting to acquire numbers
+[14:34:31.586] [SafeSumCalc    ] 📊 Sum: 1703, Operations: 18
+[14:34:31.592] [SafeSumCalc    ] 🔓 Released numbers
+[14:34:31.598] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:31.599] [SafeWriter     ] 📊 Added: 97, Operations: 35, Size: 35
+[14:34:31.600] [SafeWriter     ] 🔓 Released numbers
+[14:34:31.708] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:31.710] [SafeWriter     ] 📊 Added: 25, Operations: 36, Size: 36
+[14:34:31.711] [SafeWriter     ] 🔓 Released numbers
+[14:34:31.802] [SafeSumCalc    ] 🔒 Attempting to acquire numbers
+[14:34:31.804] [SafeSumCalc    ] 📊 Sum: 1825, Operations: 19
+[14:34:31.804] [SafeSumCalc    ] 🔓 Released numbers
+[14:34:31.818] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:31.821] [SafeWriter     ] 📊 Added: 66, Operations: 37, Size: 37
+[14:34:31.822] [SafeWriter     ] 🔓 Released numbers
+[14:34:31.849] [SafeSqrtCalc   ] 🔒 Attempting to acquire numbers
+[14:34:31.853] [SafeSqrtCalc   ] 📊 Sqrt: 357,26, Operations: 14
+[14:34:31.855] [SafeSqrtCalc   ] 🔓 Released numbers
+[14:34:31.926] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:31.927] [SafeWriter     ] 📊 Added: 18, Operations: 38, Size: 38
+[14:34:31.928] [SafeWriter     ] 🔓 Released numbers
+[14:34:32.021] [SafeSumCalc    ] 🔒 Attempting to acquire numbers
+[14:34:32.030] [SafeSumCalc    ] 📊 Sum: 1909, Operations: 20
+[14:34:32.032] [SafeSumCalc    ] ✨ SUCCESS: Completed 20 sum calculations
+[14:34:32.035] [SafeSumCalc    ] 🔓 Released numbers
+[14:34:32.039] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:32.041] [SafeWriter     ] 📊 Added: 52, Operations: 39, Size: 39
+[14:34:32.042] [SafeWriter     ] 🔓 Released numbers
+[14:34:32.146] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:32.155] [SafeWriter     ] 📊 Added: 98, Operations: 40, Size: 40
+[14:34:32.157] [SafeWriter     ] ✨ SUCCESS: Completed 40 write operations
+[14:34:32.158] [SafeWriter     ] 📈 List size usage: 40 elements
+[14:34:32.159] [SafeWriter     ] 🔓 Released numbers
+[14:34:32.171] [SafeSqrtCalc   ] 🔒 Attempting to acquire numbers
+[14:34:32.182] [SafeSqrtCalc   ] 📊 Sqrt: 374,53, Operations: 15
+[14:34:32.187] [SafeSqrtCalc   ] 🔓 Released numbers
+[14:34:32.245] [SafeSumCalc    ] 🔒 Attempting to acquire numbers
+[14:34:32.249] [SafeSumCalc    ] 📊 Sum: 2059, Operations: 21
+[14:34:32.251] [SafeSumCalc    ] 🔓 Released numbers
+[14:34:32.271] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:32.272] [SafeWriter     ] 📊 Added: 10, Operations: 41, Size: 41
+[14:34:32.273] [SafeWriter     ] 🔓 Released numbers
+[14:34:32.382] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:32.384] [SafeWriter     ] 📊 Added: 18, Operations: 42, Size: 42
+[14:34:32.384] [SafeWriter     ] 🔓 Released numbers
+[14:34:32.460] [SafeSumCalc    ] 🔒 Attempting to acquire numbers
+[14:34:32.463] [SafeSumCalc    ] 📊 Sum: 2087, Operations: 22
+[14:34:32.464] [SafeSumCalc    ] 🔓 Released numbers
+[14:34:32.490] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:32.490] [SafeSqrtCalc   ] 🔒 Attempting to acquire numbers
+[14:34:32.497] [SafeWriter     ] 📊 Added: 33, Operations: 43, Size: 43
+[14:34:32.503] [SafeWriter     ] 🔓 Released numbers
+[14:34:32.503] [SafeSqrtCalc   ] 📊 Sqrt: 376,54, Operations: 16
+[14:34:32.505] [SafeSqrtCalc   ] 🔓 Released numbers
+[14:34:32.615] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:32.616] [SafeWriter     ] 📊 Added: 97, Operations: 44, Size: 44
+[14:34:32.617] [SafeWriter     ] 🔓 Released numbers
+[14:34:32.679] [SafeSumCalc    ] 🔒 Attempting to acquire numbers
+[14:34:32.683] [SafeSumCalc    ] 📊 Sum: 2217, Operations: 23
+[14:34:32.686] [SafeSumCalc    ] 🔓 Released numbers
+[14:34:32.727] [SafeWriter     ] 🔒 Attempting to acquire numbers
+[14:34:32.729] [SafeWriter     ] 📊 Added: 94, Operations: 45, Size: 45
+[14:34:32.729] [SafeWriter     ] 🔓 Released numbers
+[14:34:32.758] [Main           ] ⏹️ Stopped: Initiating graceful shutdown
+[14:34:32.762] [SafeWriter     ] ❌ ERROR: Interrupted
+[14:34:32.763] [SafeWriter     ] 🔄 State changed to: INTERRUPTED
+[14:34:32.764] [SafeWriter     ] ⏹️ Stopped: write operations
+[14:34:32.765] [SafeSumCalc    ] ❌ ERROR: Interrupted
+[14:34:32.766] [SafeSqrtCalc   ] ❌ ERROR: Interrupted
+[14:34:32.766] [SafeSqrtCalc   ] 🔄 State changed to: INTERRUPTED
+[14:34:32.766] [SafeSumCalc    ] 🔄 State changed to: INTERRUPTED
+[14:34:32.770] [SafeSumCalc    ] ⏹️ Stopped: sum calculations
+[14:34:32.768] [SafeSqrtCalc   ] ⏹️ Stopped: sqrt calculations
+[14:34:32.772] [Main           ] ℹ️ Safe demo ran for 5,02 seconds
+[14:34:32.772] [Main           ] ✨ SUCCESS: Safe demo completed successfully with 45 elements
+[14:34:32.775] [Main           ] 📈 Final list size usage: 45 elements
+==================================================
