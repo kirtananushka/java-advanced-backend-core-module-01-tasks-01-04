@@ -1,0 +1,94 @@
+Module 01 Task 01 Report 
+========================================== 
+========================================== 
+Testing with C:\java\jdk-6 
+Date: 15.11.2024 Time: 17:35:40,19 
+Compiling with C:\java\jdk-6... 
+------------------------------------------ 
+Running MapConcurrencyTest with C:\java\jdk-6 
+Testing HashMap (unsafe):
+Map implementation: HashMap
+Total successful iterations: 25036
+Total exceptions caught: 1674
+Final map size: 10000
+
+Testing ConcurrentHashMap:
+Map implementation: ConcurrentHashMap
+Total successful iterations: 44544
+Total exceptions caught: 0
+Final map size: 10000
+
+Testing Collections.synchronizedMap:
+Map implementation: SynchronizedMap
+Total successful iterations: 174358
+Total exceptions caught: 0
+Final map size: 1916
+========================================== 
+Testing with C:\java\jdk-8 
+Date: 15.11.2024 Time: 17:35:40,19 
+Compiling with C:\java\jdk-8... 
+------------------------------------------ 
+Running MapConcurrencyTest with C:\java\jdk-8 
+Testing HashMap (unsafe):
+Map implementation: HashMap
+Total successful iterations: 37102
+Total exceptions caught: 815
+Final map size: 10000
+
+Testing ConcurrentHashMap:
+Map implementation: ConcurrentHashMap
+Total successful iterations: 37844
+Total exceptions caught: 0
+Final map size: 10000
+
+Testing Collections.synchronizedMap:
+Map implementation: SynchronizedMap
+Total successful iterations: 246575
+Total exceptions caught: 0
+Final map size: 1136
+========================================== 
+Testing with C:\java\jdk-10 
+Date: 15.11.2024 Time: 17:35:40,19 
+Compiling with C:\java\jdk-10... 
+------------------------------------------ 
+Running MapConcurrencyTest with C:\java\jdk-10 
+Testing HashMap (unsafe):
+Map implementation: HashMap
+Total successful iterations: 19075
+Total exceptions caught: 775
+Final map size: 10000
+
+Testing ConcurrentHashMap:
+Map implementation: ConcurrentHashMap
+Total successful iterations: 34678
+Total exceptions caught: 0
+Final map size: 10000
+
+Testing Collections.synchronizedMap:
+Map implementation: SynchronizedMap
+Total successful iterations: 358248
+Total exceptions caught: 0
+Final map size: 725
+========================================== 
+Testing with C:\java\jdk-11 
+Date: 15.11.2024 Time: 17:35:40,19 
+Compiling with C:\java\jdk-11... 
+------------------------------------------ 
+Running MapConcurrencyTest with C:\java\jdk-11 
+Testing HashMap (unsafe):
+Map implementation: HashMap
+Total successful iterations: 19252
+Total exceptions caught: 686
+Final map size: 10000
+
+Testing ConcurrentHashMap:
+Map implementation: ConcurrentHashMap
+Total successful iterations: 32964
+Total exceptions caught: 0
+Final map size: 10000
+
+Testing Collections.synchronizedMap:
+Map implementation: SynchronizedMap
+Total successful iterations: 240856
+Total exceptions caught: 0
+Final map size: 814
