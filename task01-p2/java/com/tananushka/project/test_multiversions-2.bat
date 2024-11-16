@@ -27,7 +27,7 @@ for %%J in (%JAVA_VERSIONS%) do (
     echo Compiling with %%~J... 
     echo Compiling with %%~J... >> "%REPORT_FILE%"
     
-    "!JAVA_HOME!\bin\javac" -d "%CLASS_OUTPUT%" "%PROJECT_ROOT%\java\com\tananushka\project\CustomMap.java" "%PROJECT_ROOT%\java\com\tananushka\project\ThreadSafeMap.java" "%PROJECT_ROOT%\java\com\tananushka\project\MapConcurrencyTest.java" >> "%REPORT_FILE%" 2>&1
+    "!JAVA_HOME!\bin\javac" -d "%CLASS_OUTPUT%" "%PROJECT_ROOT%\java\com\tananushka\project\CustomMap.java" "%PROJECT_ROOT%\java\com\tananushka\project\ThreadSafeMap.java" "%PROJECT_ROOT%\java\com\tananushka\project\CustomMapConcurrencyTest.java" >> "%REPORT_FILE%" 2>&1
     
     echo ------------------------------------------ 
     echo ------------------------------------------ >> "%REPORT_FILE%"
